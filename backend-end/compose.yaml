@@ -1,0 +1,12 @@
+services:
+  database:
+    container_name: ai-crypton
+    image: "postgres"
+    ports:
+      - "5332:5432"  # Mapeia porta 5332 do host para porta 5432 do container
+    environment:
+      POSTGRES_USER: "uicrypton"
+      POSTGRES_PASSWORD: "root"
+      POSTGRES_DB: "postgres"
+
+
